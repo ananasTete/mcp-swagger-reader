@@ -1,6 +1,6 @@
 {
   "name": "mcp-swagger-reader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Model Context Protocol (MCP) server for reading and analyzing Swagger/OpenAPI documentation with TypeScript type generation and mock data support",
   "type": "module",
   "main": "dist/index.js",
