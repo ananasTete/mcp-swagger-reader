@@ -1,20 +1,48 @@
 {
   "name": "mcp-swagger-reader",
   "version": "0.0.1",
-  "description": "",
+  "description": "A Model Context Protocol (MCP) server for reading and analyzing Swagger/OpenAPI documentation with TypeScript type generation and mock data support",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
     "mcp-swagger-reader": "./dist/index.js"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc && shx chmod +x dist/index.js",
+    "prepublishOnly": "pnpm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "swagger",
+    "openapi",
+    "api",
+    "documentation",
+    "typescript",
+    "mock-data",
+    "api-reader",
+    "swagger-parser"
+  ],
+  "author": "joinu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ananasTete/mcp-swagger-reader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ananasTete/mcp-swagger-reader/issues"
+  },
+  "homepage": "https://github.com/ananasTete/mcp-swagger-reader#readme",
   "packageManager": "pnpm@10.24.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "@apidevtools/swagger-parser": "^12.1.0",
     "@modelcontextprotocol/sdk": "^1.25.2",
